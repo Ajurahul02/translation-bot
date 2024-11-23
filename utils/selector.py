@@ -116,6 +116,8 @@ class CssSelector:
             return "div.entry-content > div > div > div > div.text-left ::text"
         elif "m.shuhaige" in link:
             return "#chapter > div.content ::text"
+        elif "www.fantinovels.com" in link:
+            return "#htmlContent ::text"
         else:
             return "* ::text"
 
