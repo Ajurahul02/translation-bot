@@ -118,6 +118,8 @@ class CssSelector:
             return "#chapter > div.content ::text"
         elif "www.fantinovels.com" in link:
             return "#htmlContent ::text"
+        elif "zeustranslations.blogspot.com" in link:
+            return "#readingBox ::text"
         else:
             return "* ::text"
 
