@@ -114,6 +114,8 @@ class CssSelector:
             return "#booktxt ::text"
         elif "1stkissnovel.org" in link:
             return "div.entry-content > div > div > div > div.text-left ::text"
+        elif "m.shuhaige" in link:
+            return "#chapter > div.content ::text"
         else:
             return "* ::text"
 
@@ -229,7 +231,7 @@ class CssSelector:
         elif "1stkissnovel.org" in link:
             return ["None", "#chapter-heading"]
         elif "m.shuhaige" in link:
-            return ["#chapter > div.content", "#chapter > div.path > a:nth-child(3)"]
+            return ["None", "#chapter > div.path > a:nth-child(3)"]
         # elif "m.bqg789.net" in link:
         #     return ["#nextpage", "#novelbody > div.head > div.nav_name > h1"]
         else:
